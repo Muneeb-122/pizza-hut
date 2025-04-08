@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PIZZA HUT - Menu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-green-600 text-white p-5 flex flex-col md:flex-row justify-between items-center">
+    <div class="flex items-center mb-4 md:mb-0">
+      <img src="/A1/img/pizzza.jpg" alt="Pizza Hut Logo" class="h-12 mr-3">
+      <h1 class="text-2xl font-bold">PIZZA HUT</h1>
+    </div>
+    <nav>
+      <ul class="flex space-x-4 md:space-x-6">
+        <li><a href="./home.html" class="hover:text-yellow-300 font-medium">Home</a></li>
+        <li><a href="./menu.html" class="hover:text-yellow-300 font-medium">Menu</a></li>
+        <li><a href="./contact.html" class="hover:text-yellow-300 font-medium">Contact</a></li>
+        <li>
+          <a href="./cart.html" class="hover:text-yellow-300 font-medium flex items-center">
+            Cart <span id="cart-count" class="ml-1 bg-yellow-500 text-black rounded-full w-6 h-6 flex items-center justify-center text-sm">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Menu Section -->
+  <main class="min-h-screen pb-32 md:pb-24 pt-8 px-4">
+    <div class="container mx-auto">
+      <h1 class="text-3xl font-bold mb-8 text-center md:text-left">Our Delicious Pizzas</h1>
+      
+      <!-- Filter Buttons -->
+      <div class="flex flex-wrap gap-2 mb-8 justify-center md:justify-start">
+        <button class="filter-btn active px-4 py-2 rounded-full bg-green-500 text-white" data-category="all">All</button>
+        <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-green-500 hover:text-white" data-category="vegetarian">Vegetarian</button>
+        <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-green-500 hover:text-white" data-category="non-vegetarian">Non-Vegetarian</button>
+        <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-green-500 hover:text-white" data-category="specialty">Specialty</button>
+      </div>
+      
+      <!-- Menu Items Grid -->
+      <div id="menu-items" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- Items will be loaded from JavaScript -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center p-5">
+    <div class="container mx-auto">
+      <p>&copy; <span id="current-year">2024</span> Pizza Hut. All rights reserved.</p>
+      <div class="flex justify-center space-x-4 mt-3">
+        <a href="#" class="hover:text-yellow-300 text-sm">Privacy Policy</a>
+        <a href="#" class="hover:text-yellow-300 text-sm">Terms of Service</a>
+        <a href="./contact.html" class="hover:text-yellow-300 text-sm">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/menu.js"></script>
+</body>
+</html>
