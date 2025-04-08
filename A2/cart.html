@@ -1,0 +1,64 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PIZZA HUT</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-green-600 text-white p-5 flex justify-between items-center">
+    <div class="flex items-center">
+      <img src="/A1/img/pizzza.jpg" alt="Pizza Hut Logo" class="h-12 mr-3">
+      <h1 class="text-2xl font-bold">PIZZA HUT</h1>
+    </div>
+    <nav>
+      <ul class="flex space-x-6">
+        <li><a href="./home.html" class="hover:text-yellow-300">Home</a></li>
+        <li><a href="./menu.html" class="hover:text-yellow-300">Menu</a></li>
+        <li><a href="./contact.html" class="hover:text-yellow-300">Contact</a></li>
+        <li><a href="./cart.html" class="hover:text-yellow-300">Cart (0)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Content Section -->
+  <main class="min-h-screen pb-16">
+   
+
+    <!-- {% block content %} -->
+    <section class="container mx-auto py-8 px-4 max-w-2xl">
+      <h2 class="text-3xl font-bold mb-6">Your Cart</h2>
+      
+      <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <!-- Cart Items -->
+        <div class="border-b border-gray-200 pb-4 mb-4 flex justify-between">
+          <div>
+            <h3 class="font-semibold">Margherita Pizza</h3>
+            <p class="text-gray-600">1449</p>
+          </div>
+          <button class="text-red-500 hover:text-red-700">Remove</button>
+        </div>
+        
+        <!-- Total -->
+        <div class="flex justify-between items-center mt-6 pt-4 border-t border-gray-200">
+          <h3 class="text-xl font-bold">Total:</h3>
+          <p class="text-xl font-bold">Rs. 1499</p>
+        </div>
+      </div>
+      
+      <button class="w-full bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+        Proceed to Checkout
+      </button>
+    </section>
+    <!-- {% endblock %}    -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center p-5 fixed bottom-0 w-full">
+    <p>&copy; 2024 Pizza Hut. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PIZZA HUT</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-green-600 text-white p-5 flex justify-between items-center">
+    <div class="flex items-center">
+      <img src="/A1/img/pizzza.jpg" alt="Pizza Hut Logo" class="h-12 mr-3">
+      <h1 class="text-2xl font-bold">PIZZA HUT</h1>
+    </div>
+    <nav>
+      <ul class="flex space-x-6">
+        <li><a href="./home.html" class="hover:text-yellow-300">Home</a></li>
+        <li><a href="./menu.html" class="hover:text-yellow-300">Menu</a></li>
+        <li><a href="./contact.html" class="hover:text-yellow-300">Contact</a></li>
+        <li><a href="./cart.html" class="hover:text-yellow-300">Cart (0)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Content Section -->
+  <main class="min-h-screen pb-16">
+    <!-- {% block content %} -->
+    <section class="max-w-md mx-auto my-8 p-6 bg-white rounded-lg shadow-md">
+      <h2 class="text-2xl font-bold text-center mb-6">Contact Us</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Name" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500">
+        <input type="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500">
+        <textarea placeholder="Message" class="w-full p-3 border border-gray-300 rounded h-32 focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+        <button type="submit" class="w-full bg-orange-500 hover:bg-orange-700 text-white font-bold py-3 px-4 rounded transition duration-300">
+          Send Message
+        </button>
+      </form>
+    </section>
+    <!-- {% endblock %} -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center p-5 fixed bottom-0 w-full">
+    <p>&copy; 2024 Pizza Hut. All rights reserved.</p>
+  </footer>
+</body>
+</html>
